@@ -8,129 +8,170 @@
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 40px;
-      background: #f5f5f5;
+      padding: 0;
+      background: #f5f7fa;
       color: #333;
       line-height: 1.7;
     }
-    h1, h2, h3 {
-      color: #222;
+
+    header {
+      background: #0e76a8;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     .section {
       margin-bottom: 60px;
     }
+
+    .section h2 {
+      border-left: 6px solid #0e76a8;
+      padding-left: 15px;
+      font-size: 1.8rem;
+    }
+
     .project {
       background: white;
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-top: 20px;
+      transition: transform 0.3s;
     }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 10px;
     }
+
     th, td {
-      padding: 10px;
+      padding: 12px;
       border: 1px solid #ddd;
+      text-align: left;
     }
+
     a {
-      color: #0066cc;
+      color: #0e76a8;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome</h1>
-  <p>Hi, I'm <strong>Nelson</strong>, a WordPress developer and SEO specialist, experienced in transforming underperforming websites into optimised, search-friendly platforms.</p>
+  <header>
+    <h1>👋 Hi, I'm Nelson</h1>
+    <p>WordPress Developer | SEO Strategist | Digital Marketer</p>
+  </header>
 
-  <div class="section">
-    <h2>Featured Projects</h2>
+  <div class="container">
+    <div class="section">
+      <h2>🚀 Featured Projects</h2>
 
-    <div class="project">
-      <h3>Ardent Universe – Custom Job Board + SEO Optimisation</h3>
-      <p><strong>Problem:</strong><br>
-      Ardent Universe was using blog posts to list jobs, making it hard to scale, categorise, and rank efficiently on Google.</p>
+      <div class="project">
+        <h3>Ardent Universe – Custom Job Board + SEO Optimisation</h3>
+        <p><strong>Problem:</strong> Ardent Universe used blog posts to list jobs, which wasn't scalable or SEO-friendly.</p>
+        <p><strong>Solution:</strong></p>
+        <ul>
+          <li>Created a <strong>Custom Post Type (Jobs)</strong> using CPT UI</li>
+          <li>Migrated blog posts into the new structure</li>
+          <li>Built <strong>custom fields</strong> (Job Type, Experience, Company, Field) via ACF</li>
+          <li>Added <strong>structured data & schema</strong> for Google Jobs</li>
+          <li>Designed custom homepage template (<code>page-latest.php</code>)</li>
+          <li>SEO optimized with <strong>Yoast SEO, Ahrefs, Keyword Surfer</strong></li>
+          <li>Integrated <strong>Job Manager plugin</strong> for external submissions (with admin approval)</li>
+        </ul>
+        <p><strong>Tools & Tech:</strong> WordPress, CPT UI, ACF, PHP, Yoast SEO, Ahrefs, Google Site Kit</p>
+        <p><strong>Impact:</strong></p>
+        <ul>
+          <li>Boosted visibility on Google SERPs</li>
+          <li>Improved site structure & navigation</li>
+          <li>Scalable SEO foundation established</li>
+        </ul>
+      </div>
 
-      <p><strong>Solution:</strong></p>
-      <ul>
-        <li>Built a <strong>Custom Post Type (Jobs)</strong> using CPT UI</li>
-        <li>Migrated all job blog posts into the new CPT</li>
-        <li>Created <strong>custom fields</strong> (Job Type, Experience, Company, Field) using ACF</li>
-        <li>Implemented <strong>structured data & schema markup</strong> for Google Job Search indexing</li>
-        <li>Designed a custom homepage template (<code>page-latest.php</code>) to display latest job listings</li>
-        <li>Used <strong>Yoast SEO, Ahrefs, Keyword Surfer</strong> for page-level optimisation</li>
-        <li>Set up a <strong>Job Manager plugin</strong> for companies to submit jobs (admin-approved)</li>
-      </ul>
-
-      <p><strong>Tools & Tech:</strong> WordPress, CPT UI, ACF, PHP, Yoast SEO, Ahrefs, Google Site Kit, Keyword Surfer</p>
-      <p><strong>Impact:</strong></p>
-      <ul>
-        <li>Improved job visibility in Google SERPs</li>
-        <li>Enabled long-term SEO scalability</li>
-        <li>Enhanced site performance and navigation</li>
-      </ul>
+      <div class="project">
+        <h3>MyJobMag – SEO Strategy for Blog & Listings</h3>
+        <p><strong>Problem:</strong> Poor metadata, weak internal links, and keyword structure.</p>
+        <p><strong>Solution:</strong></p>
+        <ul>
+          <li>Updated 50+ blog posts for metadata and H1/H2 structure</li>
+          <li>Enhanced internal and outbound linking</li>
+          <li>Used visuals for data-driven content</li>
+          <li>Keyword research via Ahrefs</li>
+          <li>Backlink outreach through guest posting</li>
+        </ul>
+        <p><strong>Result:</strong> Ranked #1 for "jobs in Nigeria" & "jobs in Kenya". Increased traffic in under 6 months.</p>
+      </div>
     </div>
 
-    <div class="project">
-      <h3>MyJobMag – SEO Strategy for Blog & Listings</h3>
-      <p><strong>Problem:</strong><br>
-      The blog lacked a clear SEO structure, with missing meta descriptions, a poor keyword hierarchy, and a weak link strategy.</p>
-
-      <p><strong>Solution:</strong></p>
-      <ul>
-        <li>Optimized 50+ blog posts with meta descriptions, H1/H2 structure, and keyword placement</li>
-        <li>Improved internal and outbound linking for better crawling</li>
-        <li>Added visuals to align with Google’s algorithm preferences</li>
-        <li>Performed keyword research via Ahrefs</li>
-        <li>Helped with backlink strategies, including guest posting</li>
-      </ul>
-
-      <p><strong>Result:</strong> Ranked #1 for "jobs in Nigeria" and "jobs in Kenya", with a strong traffic boost in 6 months.</p>
+    <div class="section">
+      <h2>🛠️ Skills & Tools</h2>
+      <p><strong>SEO:</strong> Ahrefs, Yoast SEO, Google Site Kit, Search Console, Keyword Surfer</p>
+      <p><strong>Dev:</strong> WordPress (CPT, ACF), PHP, HTML/CSS, cPanel</p>
+      <p><strong>Strategy:</strong> Keyword tracking, backlinking, analytics, content marketing</p>
     </div>
-  </div>
 
-  <div class="section">
-    <h2>🛠️ Skills & Tools</h2>
-    <p><strong>SEO Tools:</strong> Ahrefs, Yoast SEO, Google Site Kit, Google Search Console, Keyword Surfer</p>
-    <p><strong>Web Dev:</strong> WordPress (CPT, ACF), PHP, HTML/CSS, cPanel</p>
-    <p><strong>Analytics & Strategy:</strong> Content tracking, keyword research, competitor analysis, backlink strategies</p>
-  </div>
+    <div class="section">
+      <h2>📚 Articles / Insights</h2>
+      <table>
+        <tr>
+          <th>Title</th>
+          <th>Date</th>
+          <th>Focus</th>
+        </tr>
+        <tr>
+          <td>Why Your Job Site Isn’t Ranking on Google</td>
+          <td>June 2025</td>
+          <td>SEO Tips</td>
+        </tr>
+        <tr>
+          <td>How I Built a Job Listing System with WordPress CPT</td>
+          <td>May 2025</td>
+          <td>Dev Tutorial</td>
+        </tr>
+        <tr>
+          <td>Backlinking for Beginners: A Simple Guide</td>
+          <td>Coming Soon</td>
+          <td>Digital Marketing</td>
+        </tr>
+      </table>
+    </div>
 
-  <div class="section">
-    <h2>Articles / Insights</h2>
-    <table>
-      <tr>
-        <th>Title</th>
-        <th>Date</th>
-        <th>Focus</th>
-      </tr>
-      <tr>
-        <td>Why Your Job Site Isn’t Ranking on Google</td>
-        <td>June 2025</td>
-        <td>SEO Tips</td>
-      </tr>
-      <tr>
-        <td>How I Built a Job Listing System with WordPress CPT</td>
-        <td>May 2025</td>
-        <td>Dev Tutorial</td>
-      </tr>
-      <tr>
-        <td>Backlinking for Beginners: A Simple Guide</td>
-        <td>Coming Soon</td>
-        <td>Digital Marketing</td>
-      </tr>
-    </table>
-  </div>
-
-  <div class="section">
-    <h2>Get In Touch</h2>
-    <p>Let’s work together! Whether you need help revamping your site, planning your SEO strategy, or just want advice on Google rankings, I’m open to freelance gigs, full-time roles, or collaborations.</p>
-    <p><strong>Email:</strong> nelsonokoh22@gmail.com</p>
+    <div class="section">
+      <h2>📬 Get In Touch</h2>
+      <p>Let’s work together! I'm open to freelance gigs, collaborations, or full-time roles.</p>
+      <p><strong>Email:</strong> <a href="mailto:nelsonokoh22@gmail.com">nelsonokoh22@gmail.com</a></p>
+    </div>
   </div>
 </body>
 </html>

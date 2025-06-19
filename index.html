@@ -1,113 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Nelson Edozie | Web Developer & SEO Strategist Portfolio">
-  <title>Nelson Edozie | SEO & WordPress Developer</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0 1rem;
-      background-color: #f9f9f9;
-      color: #222;
-      line-height: 1.6;
-    }
-    header {
-      text-align: center;
-      background: #fff;
-      padding: 2rem 1rem;
-      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-    }
-    h1 { font-size: 2rem; margin-bottom: 0; }
-    h2 { color: #007acc; }
-    section {
-      background: white;
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    ul { padding-left: 1.2rem; }
-    a { color: #007acc; text-decoration: none; }
-    footer {
-      text-align: center;
-      margin: 2rem 0;
-      color: #888;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Nelson Edozie</h1>
-    <p>Web Developer | SEO Strategist | Digital Marketer</p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nelson Edozie | SEO & WordPress Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <main>
-    <section>
-      <h2>👋 Welcome</h2>
-      <p>I specialize in turning underperforming WordPress websites into fast, SEO-optimized, and structured platforms. From web development to SEO strategy, I help websites gain visibility and authority on Google.</p>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1s ease-out forwards;
+      }
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 text-gray-800 px-6 md:px-24 py-12">
+
+    <section class="fade-in mb-10">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 text-blue-600">👋 Hello, I'm Nelson</h1>
+      <p class="text-xl max-w-2xl">I build SEO-optimized job platforms and help websites rank #1 on Google using custom WordPress development, structured data, and powerful content strategies.</p>
     </section>
 
-    <section>
-      <h2>🚀 Projects</h2>
+    <section class="fade-in mb-10">
+      <h2 class="text-3xl font-semibold mb-4">🚀 Featured Projects</h2>
 
-      <h3>🌐 Ardent Universe – Job Board Overhaul + SEO Boost</h3>
-      <p><strong>Problem:</strong> Ardent Universe was listing jobs as blog posts, which hurt categorization, discoverability, and SEO scalability.</p>
-      <p><strong>My Solution:</strong></p>
-      <ul>
-        <li>Created a <strong>Custom Post Type (Jobs)</strong> using CPT UI</li>
-        <li>Migrated existing blog post jobs into the new CPT</li>
-        <li>Added <strong>custom fields</strong> (Job Type, Experience, Company, Field) using ACF</li>
-        <li>Applied <strong>structured data/schema markup</strong> for Google Jobs indexing</li>
-        <li>Built a custom homepage template (`page-latest.php`) to show latest jobs dynamically</li>
-        <li>Set up <strong>Job Manager plugin</strong> to allow companies to submit jobs for admin approval</li>
-        <li>Used <strong>Yoast SEO</strong> for meta tags, and conducted keyword research with <strong>Ahrefs</strong> and <strong>Keyword Surfer</strong></li>
-      </ul>
-      <p><strong>Impact:</strong> Improved job discoverability on Google and streamlined the site's structure for future scalability.</p>
+      <div class="bg-white p-6 rounded-xl shadow-md mb-6">
+        <h3 class="text-xl font-bold mb-2">🔧 Ardent Universe</h3>
+        <ul class="list-disc list-inside text-sm">
+          <li>Built custom WordPress job system with CPT UI & ACF</li>
+          <li>Migrated old blog jobs to new custom post type</li>
+          <li>Added structured data for Google Jobs</li>
+          <li>Made it possible for companies to submit jobs via Job Manager (admin approval)</li>
+          <li>Created homepage template to show latest jobs</li>
+          <li>Used Yoast SEO, Ahrefs, Keyword Surfer for optimization</li>
+        </ul>
+      </div>
 
-      <h3>📈 MyJobMag – Blog SEO Strategy</h3>
-      <p><strong>Problem:</strong> The blog suffered from missing meta descriptions, poor keyword hierarchy, and weak link-building.</p>
-      <p><strong>My SEO Fix:</strong></p>
-      <ul>
-        <li>Optimized over 50+ blog posts with strong H1/H2 usage, proper metadata, and keywords</li>
-        <li>Improved internal/external linking for better crawlability</li>
-        <li>Added <strong>visuals</strong> to key blog posts, especially reports and statistics, to meet Google quality guidelines</li>
-        <li>Tracked SEO performance via <strong>Google Site Kit</strong> and <strong>Google Search Console</strong></li>
-        <li>Implemented backlinking through <strong>guest posts</strong> and outreach for authority building</li>
-      </ul>
-      <p><strong>Result:</strong> Helped the site rank #1 for "jobs in Nigeria" and "jobs in Kenya" — outranking Jobberman in many cases.</p>
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-bold mb-2">📈 MyJobMag</h3>
+        <ul class="list-disc list-inside text-sm">
+          <li>SEO cleanup: H1/H2 structure, metadata, linking</li>
+          <li>Keyword research with Ahrefs</li>
+          <li>Graphics added for Google-rich content indexing</li>
+          <li>Supported backlink outreach with guest posts</li>
+          <li>Helped achieve #1 rank for “jobs in Nigeria”, “jobs in Kenya”</li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <h2>🛠 Skills & Tools</h2>
-      <ul>
-        <li><strong>SEO Tools:</strong> Ahrefs, Yoast SEO, Keyword Surfer, Google Site Kit, Google Search Console</li>
-        <li><strong>Web Development:</strong> WordPress, PHP, CPT UI, ACF, HTML, CSS, cPanel</li>
-        <li><strong>Digital Strategy:</strong> Link building, keyword planning, content structuring, analytics</li>
-      </ul>
+    <section class="fade-in mb-10">
+      <h2 class="text-3xl font-semibold mb-4">🛠 Skills & Tools</h2>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">WordPress (CPT, ACF)</span>
+        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full">Yoast SEO</span>
+        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">Ahrefs</span>
+        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">Keyword Surfer</span>
+        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full">Google Site Kit</span>
+        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">PHP</span>
+        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">cPanel</span>
+      </div>
     </section>
 
-    <section>
-      <h2>📚 Articles / Insights</h2>
-      <ul>
-        <li><strong>Why Your Job Site Isn’t Ranking on Google</strong> – June 2025 – SEO Tips</li>
-        <li><strong>How I Built a Job Listing System with WordPress CPT</strong> – May 2025 – Dev Tutorial</li>
-        <li><strong>Backlinking for Beginners: A Simple Guide</strong> – Coming Soon – Digital Marketing</li>
-      </ul>
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold mb-4">📬 Contact Me</h2>
+      <p class="text-lg mb-2">Let’s collaborate or talk SEO strategies.</p>
+      <p>Email: <a class="text-blue-600 underline" href="mailto:nelsonokoh22@gmail.com">nelsonokoh22@gmail.com</a></p>
+      <p>LinkedIn: <a class="text-blue-600 underline" href="https://linkedin.com/in/nelson-edozie" target="_blank">linkedin.com/in/nelson-edozie</a></p>
     </section>
-
-    <section>
-      <h2>📬 Contact</h2>
-      <p>📧 Email: <a href="mailto:nelsonokoh22@gmail.com">nelsonokoh22@gmail.com</a></p>
-      <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/nelson-edozie" target="_blank">linkedin.com/in/nelson-edozie</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Nelson Edozie</p>
-  </footer>
-</body>
+    
+  </body>
 </html>
